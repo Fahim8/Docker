@@ -3,8 +3,15 @@ from flask import request
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
+idef hello():
     return "Hello World!"
+
+@app.route("/1")
+idef hello():
+    return "Hello people!"
+
+
+
 
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_file():
