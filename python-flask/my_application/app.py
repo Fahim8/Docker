@@ -2,15 +2,17 @@ from flask import Flask
 from flask import request
 app = Flask(__name__)
 
-import os, sys
-
 @app.route("/")
 def hello():
     return "Hello World!"
 
 @app.route("/1")
 def hello():
-    return "Hello people!"
+    return "H
+  ello people!"
+  
+  
+
 
 
 
@@ -27,14 +29,11 @@ if __name__ == "__main__":
 
 
 
+@app.route("/euler1")
+def euler1():
+    sum = 0
+    for x in range (1, 1000):
+       if x%3 or x%5:
+    sum = sum +x
 
-@app.rouste ("/listfile")
-def files():
-    path = "./uploads"
-    x = os.listx (path)
-    
-    for file in x:
-    files = str (files +file + " ")
-
-    return files
-
+    return str (sum)
