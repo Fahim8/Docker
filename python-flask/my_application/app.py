@@ -2,12 +2,14 @@ from flask import Flask
 from flask import request
 app = Flask(__name__)
 
+import os, sys
+
 @app.route("/")
-idef hello():
+def hello():
     return "Hello World!"
 
 @app.route("/1")
-idef hello():
+def hello():
     return "Hello people!"
 
 
@@ -21,3 +23,18 @@ def upload_file():
     return '',201
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
+
+
+
+
+
+@app.rouste ("/listfile")
+def files():
+    path = "./uploads"
+    x = os.listx (path)
+    
+    for file in x:
+    files = str (files +file + " ")
+
+    return files
+
