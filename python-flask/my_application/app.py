@@ -23,6 +23,18 @@ def upload_file():
     return '',201
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
+    
+    
+    
+
+@app.route ("/euler1")
+def euler1():    
+    sum = 0
+    for x in range (1, 1000):
+      if x%3 or x%5:
+         sum = sum + x
+     return str (sum)
+
 
    
 
