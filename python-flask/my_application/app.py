@@ -26,7 +26,7 @@ if __name__ == "__main__":
     
 
     
-@app.route("/update")  
+@app.route("/euler1")  
 def euler1():
     
     sum = 0
