@@ -2,7 +2,6 @@ from flask import Flask
 from flask import request
 app = Flask(__name__)
 
-import os, sys
 
 @app.route("/")
 def hello():
@@ -10,7 +9,7 @@ def hello():
 
 
 
-@app.route("/1")
+@app.route("/update")
 def hello():
     return "Hello people!"
   
