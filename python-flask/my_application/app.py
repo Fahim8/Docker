@@ -31,9 +31,9 @@ if __name__ == "__main__":
 def euler1():    
     sum = 0
     for x in range (1, 1000):
-      if x%3 or x%5:
-         sum = sum + x
-     return str (sum)
+        if x%3 or x%5:
+            sum = sum + x
+        return (sum)
 
 
    
