@@ -10,7 +10,7 @@ def hello():
 
 
 @app.route("/update")
-def hello():
+def hello1():
     return "Hello people!"
   
   
