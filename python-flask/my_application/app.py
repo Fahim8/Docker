@@ -12,8 +12,7 @@ def hello():
 
 @app.route("/1")
 def hello():
-    return "H
-  ello people!"
+    return "Hello people!"
   
   
 
