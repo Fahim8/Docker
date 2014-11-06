@@ -38,7 +38,7 @@ def files():
     
 
     
-@app.route("/euler1")  
+@app.route("/euler")  
 def euler1():
     
     sum = 0
