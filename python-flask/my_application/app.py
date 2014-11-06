@@ -42,14 +42,6 @@ def files():
 
 
 
-@app.rouste ("/listfile")
-def files():
-path = "./uploads"
-x = os.listx (path)
-for file in x:
-files = str (files +file + " ")
-return files
-
 
 @app.route ("/euler1")
 def euler1():    
