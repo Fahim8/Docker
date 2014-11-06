@@ -27,13 +27,19 @@ if __name__ == "__main__":
     
     
 
-@app.route ("/euler1")
-def euler1():    
+def euler1():
+    
     sum = 0
-    for x in range (1, 1000):
-        if x%3 or x%5:
-            sum = sum + x
-        return (sum)
+    for x in range (1,1000):
+    
+        if x%3 == 0 or x%5 == 0:
+        
+            sum +=x
+    return (sum)
+      
+      
+
+
 
 
    
